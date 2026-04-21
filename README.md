@@ -1,1 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Call of Duty Mobile</title>
 
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #111;
+      color: #eee;
+      margin: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      color: #00ffcc;
+    }
+
+    h2 {
+      color: #ffaa00;
+      border-bottom: 2px solid #ffaa00;
+    }
+
+    p {
+      line-height: 1.6;
+    }
+
+    ul {
+      background-color: #222;
+      padding: 15px;
+      border-radius: 10px;
+    }
+
+    li {
+      margin: 5px 0;
+    }
+  </style>
+
+</head>
+<body>
+
+<h1>Call of Duty: Mobile</h1>
+
+<p>Call of Duty: Mobile is a free-to-play first-person shooter game released in 2019. It brings console-style gameplay to mobile devices with high-quality graphics and exciting combat.</p>
+
+<h2>Game Overview</h2>
+<p>The game includes both multiplayer and battle royale modes. Players can customize loadouts, weapons, and skills while competing in different maps and missions.  [oai_citation:1‡GamesRadar+](https://www.gamesradar.com/call-of-duty-mobile-guide/?utm_source=chatgpt.com)</p>
+
+<h2>Game Modes</h2>
+<ul>
+  <li><b>Team Deathmatch</b> – teams fight to reach the kill limit</li>
+  <li><b>Frontline</b> – players respawn at base and earn points by kills</li>
+  <li><b>Domination</b> – capture zones to earn points</li>
+  <li><b>Search and Destroy</b> – strategic mode with no respawn</li>
+  <li><b>Battle Royale</b> – last player or team survives</li>
+</ul>
+
+<h2>How to Play</h2>
+<p>Players use touch controls to move, aim, and shoot. Each match has objectives like eliminating enemies or capturing zones. Strategy and teamwork are important to win.</p>
+
+<h2>Scoring System</h2>
+<p>Points are earned by kills, capturing objectives, or completing missions. For example, teams win by reaching a target score like 50 kills in Team Deathmatch.  [oai_citation:2‡GameSpot](https://www.gamespot.com/articles/cod-mobile-game-modes-overview-how-to-play-each-mode/1100-6497667/?utm_source=chatgpt.com)</p>
+
+<h2>Main Characters</h2>
+<ul>
+  <li>Captain Price – leader and tactical expert</li>
+  <li>Ghost – stealth specialist with a skull mask</li>
+  <li>Soap – skilled soldier and fighter</li>
+</ul>
+
+<h2>Enemies</h2>
+<p>Enemies can be real players in multiplayer matches or opposing squads in battle royale mode. Players must eliminate them to win.</p>
+
+</body>
+</html>
