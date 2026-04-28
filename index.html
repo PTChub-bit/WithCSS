@@ -7,8 +7,17 @@
     body {
         margin: 0;
         font-family: Arial, sans-serif;
-        background: #eef2f7;
-        color: #1a1a1a;
+        color: #e5e7eb;
+
+        /* CODM-inspired background */
+        background: linear-gradient(
+            135deg,
+            #0b1220 0%,
+            #0f1b33 40%,
+            #111827 100%
+        );
+
+        background-attachment: fixed;
     }
 
     h1 {
@@ -26,25 +35,26 @@
         margin: 40px 20px 20px;
         padding-left: 12px;
         border-left: 6px solid #f8c650;
-        color: #0f172a;
+        color: #f8c650;
     }
 
     hr {
         border: none;
         height: 1px;
-        background: #cbd5e1;
+        background: #334155;
         margin: 40px 20px;
     }
 
-    /* MAIN CARD */
+    /* CARD STYLE */
     .card {
         max-width: 600px;
         margin: 20px auto;
         border-radius: 12px;
         overflow: hidden;
-        background: #ffffff;
-        box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+        background: rgba(255, 255, 255, 0.06);
+        box-shadow: 0 6px 18px rgba(0,0,0,0.35);
         transition: 0.3s ease;
+        backdrop-filter: blur(6px);
     }
 
     .card:hover {
@@ -59,6 +69,7 @@
     .card p, .card ul {
         padding: 15px;
         margin: 0;
+        color: #e5e7eb;
     }
 
     .card ul {
@@ -74,11 +85,12 @@
         max-width: 300px;
         margin: 15px auto;
         text-align: center;
-        background: #ffffff;
+        background: rgba(255, 255, 255, 0.06);
         border-radius: 12px;
         overflow: hidden;
-        box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        box-shadow: 0 4px 12px rgba(0,0,0,0.3);
         transition: 0.3s ease;
+        backdrop-filter: blur(6px);
     }
 
     .character:hover {
@@ -92,6 +104,7 @@
     .character p {
         padding: 10px;
         margin: 0;
+        color: #e5e7eb;
     }
 
     footer {
@@ -111,7 +124,6 @@
 
     <h1>Call of Duty: Mobile</h1>
 
-    <!-- DESCRIPTION -->
     <h2>Description</h2>
     <div class="card">
         <img src="Description.jpeg">
@@ -122,7 +134,6 @@
         </p>
     </div>
 
-    <!-- GAME MODES -->
     <h2>Game Modes</h2>
     <div class="card">
         <img src="Gamemode.jpg">
@@ -134,7 +145,6 @@
         </ul>
     </div>
 
-    <!-- SCORING -->
     <h2>Scoring System</h2>
     <div class="card">
         <img src="Scoring.jpeg">
@@ -144,7 +154,6 @@
         </p>
     </div>
 
-    <!-- CHARACTERS -->
     <h2>Main Characters</h2>
 
     <div class="character">
@@ -162,7 +171,6 @@
         <p>Soap – Skilled soldier</p>
     </div>
 
-    <!-- WEAPONS -->
     <h2>Weapons and Loadouts</h2>
     <div class="card">
         <img src="Weapons.png">
@@ -171,7 +179,6 @@
         </p>
     </div>
 
-    <!-- MAPS -->
     <h2>Popular Maps</h2>
 
     <div class="card">
@@ -194,7 +201,6 @@
         <p>Hijacked – Close combat map</p>
     </div>
 
-    <!-- RANK -->
     <h2>Rank System</h2>
     <div class="card">
         <img src="Rank.jpeg">
@@ -203,7 +209,6 @@
         </p>
     </div>
 
-    <!-- TIPS -->
     <h2>Tips and Strategies</h2>
     <div class="card">
         <img src="Tips.jpeg">
@@ -215,7 +220,6 @@
         </ul>
     </div>
 
-    <!-- SEASON -->
     <h2>Seasonal Updates</h2>
     <div class="card">
         <img src="Season.jpeg">
@@ -224,7 +228,6 @@
         </p>
     </div>
 
-    <!-- WHY I LIKE IT -->
     <h2>Why I Like It</h2>
     <div class="card">
         <img src="Codm2.jpeg">
