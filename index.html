@@ -7,84 +7,100 @@
     body {
         margin: 0;
         font-family: Arial, sans-serif;
-        background: #f4f6f9;
+        background: #eef2f7;
         color: #1a1a1a;
-        line-height: 1.6;
     }
 
     h1 {
         text-align: center;
-        color: #111;
         font-size: 42px;
-        padding: 25px;
-        background: linear-gradient(90deg, #ffffff, #e6ecf5);
-        border-bottom: 3px solid #f8c650;
-        letter-spacing: 2px;
         margin: 0;
+        padding: 25px;
+        color: #ffffff;
+        background: linear-gradient(90deg, #0f172a, #1e3a8a);
+        border-bottom: 4px solid #f8c650;
+        letter-spacing: 2px;
     }
 
     h2 {
-        color: #0f172a;
-        margin-top: 40px;
+        margin: 40px 20px 20px;
         padding-left: 12px;
         border-left: 6px solid #f8c650;
-        font-size: 26px;
-    }
-
-    body > * {
-        padding: 0 20px;
-        max-width: 1100px;
-        margin: auto;
-    }
-
-    img {
-        display: block;
-        margin: 15px auto;
-        border-radius: 12px;
-        max-width: 100%;
-        box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-        transition: 0.3s ease;
-    }
-
-    img:hover {
-        transform: scale(1.03);
-    }
-
-    p {
-        font-size: 16px;
-        color: #333;
-        background: #ffffff;
-        padding: 15px;
-        border-radius: 10px;
-        box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-    }
-
-    ul {
-        background: #ffffff;
-        padding: 15px 25px;
-        border-radius: 10px;
-        box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-        max-width: 500px;
-    }
-
-    li {
-        margin: 8px 0;
+        color: #0f172a;
     }
 
     hr {
         border: none;
         height: 1px;
-        background: #d6dbe6;
-        margin: 40px 0;
+        background: #cbd5e1;
+        margin: 40px 20px;
+    }
+
+    /* MAIN CARD */
+    .card {
+        max-width: 600px;
+        margin: 20px auto;
+        border-radius: 12px;
+        overflow: hidden;
+        background: #ffffff;
+        box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+        transition: 0.3s ease;
+    }
+
+    .card:hover {
+        transform: translateY(-5px);
+    }
+
+    .card img {
+        width: 100%;
+        display: block;
+    }
+
+    .card p, .card ul {
+        padding: 15px;
+        margin: 0;
+    }
+
+    .card ul {
+        list-style: none;
+    }
+
+    .card li {
+        margin: 6px 0;
+    }
+
+    /* CHARACTER CARD */
+    .character {
+        max-width: 300px;
+        margin: 15px auto;
+        text-align: center;
+        background: #ffffff;
+        border-radius: 12px;
+        overflow: hidden;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        transition: 0.3s ease;
+    }
+
+    .character:hover {
+        transform: translateY(-5px);
+    }
+
+    .character img {
+        width: 100%;
+    }
+
+    .character p {
+        padding: 10px;
+        margin: 0;
     }
 
     footer {
         text-align: center;
         padding: 25px;
-        background: #111827;
-        color: #fff;
-        margin-top: 40px;
+        background: #0f172a;
+        color: #ffffff;
         border-top: 4px solid #f8c650;
+        margin-top: 50px;
     }
 
 </style>
@@ -94,111 +110,128 @@
 <body>
 
     <h1>Call of Duty: Mobile</h1>
-    <img src="Codm1.jpeg" width="300">
 
-    <hr>
-
+    <!-- DESCRIPTION -->
     <h2>Description</h2>
-    <img src="Description.jpeg" width="250">
-    <p>
-        Call of Duty: Mobile is a popular first-person shooter game developed by Activision and released in 2019.
-        It combines classic gameplay with mobile accessibility, allowing millions of players worldwide to compete.
-        The game features realistic graphics, smooth controls, and multiple game modes.
-    </p>
+    <div class="card">
+        <img src="Description.jpeg">
+        <p>
+            Call of Duty: Mobile is a popular first-person shooter game developed by Activision and released in 2019.
+            It combines classic gameplay with mobile accessibility, allowing millions of players worldwide to compete.
+            The game features realistic graphics, smooth controls, and multiple game modes.
+        </p>
+    </div>
 
-    <hr>
-
+    <!-- GAME MODES -->
     <h2>Game Modes</h2>
-    <ul>
-        <li>Multiplayer</li>
-        <li>Battle Royale</li>
-        <li>Zombies Mode</li>
-        <li>Ranked Matches</li>
-    </ul>
-    <img src="Gamemode.jpg" width="250">
+    <div class="card">
+        <img src="Gamemode.jpg">
+        <ul>
+            <li>Multiplayer</li>
+            <li>Battle Royale</li>
+            <li>Zombies Mode</li>
+            <li>Ranked Matches</li>
+        </ul>
+    </div>
 
-    <hr>
-
+    <!-- SCORING -->
     <h2>Scoring System</h2>
-    <img src="Scoring.jpeg" width="250">
-    <p>
-        Players earn points by eliminating enemies, capturing objectives, and completing missions.
-        Teams win by reaching a target score depending on the mode.
-    </p>
+    <div class="card">
+        <img src="Scoring.jpeg">
+        <p>
+            Players earn points by eliminating enemies, capturing objectives, and completing missions.
+            Teams win by reaching a target score depending on the mode.
+        </p>
+    </div>
 
-    <hr>
-
+    <!-- CHARACTERS -->
     <h2>Main Characters</h2>
 
-    <img src="CaptainPrice.jpeg" width="150">
-    <p>Captain Price – leader and tactical expert</p>
+    <div class="character">
+        <img src="CaptainPrice.jpeg">
+        <p>Captain Price – Tactical leader</p>
+    </div>
 
-    <img src="Ghost.jpeg" width="150">
-    <p>Ghost – stealth specialist</p>
+    <div class="character">
+        <img src="Ghost.jpeg">
+        <p>Ghost – Stealth specialist</p>
+    </div>
 
-    <img src="Soap.jpeg" width="150">
-    <p>Soap – skilled soldier</p>
+    <div class="character">
+        <img src="Soap.jpeg">
+        <p>Soap – Skilled soldier</p>
+    </div>
 
-    <hr>
-
+    <!-- WEAPONS -->
     <h2>Weapons and Loadouts</h2>
-    <img src="Weapons.png" width="250">
-    <p>
-        Players can choose from different weapon types and customize them with attachments.
-    </p>
+    <div class="card">
+        <img src="Weapons.png">
+        <p>
+            Players can choose from different weapon types and customize them with attachments.
+        </p>
+    </div>
 
-    <hr>
-
+    <!-- MAPS -->
     <h2>Popular Maps</h2>
 
-    <img src="Nuketown.jpeg" width="200">
-    <p>Nuketown – small fast-paced map</p>
+    <div class="card">
+        <img src="Nuketown.jpeg">
+        <p>Nuketown – Small fast-paced map</p>
+    </div>
 
-    <img src="Crash.jpeg" width="200">
-    <p>Crash – balanced map</p>
+    <div class="card">
+        <img src="Crash.jpeg">
+        <p>Crash – Balanced map</p>
+    </div>
 
-    <img src="Firing range.jpg" width="200">
-    <p>Firing Range – training map</p>
+    <div class="card">
+        <img src="Firing range.jpg">
+        <p>Firing Range – Training map</p>
+    </div>
 
-    <img src="Hijacked.jpeg" width="200">
-    <p>Hijacked – close combat map</p>
+    <div class="card">
+        <img src="Hijacked.jpeg">
+        <p>Hijacked – Close combat map</p>
+    </div>
 
-    <hr>
-
+    <!-- RANK -->
     <h2>Rank System</h2>
-    <img src="Rank.jpeg" width="250">
-    <p>
-        Players rank up from Rookie to Legendary based on performance.
-    </p>
+    <div class="card">
+        <img src="Rank.jpeg">
+        <p>
+            Players rank up from Rookie to Legendary based on performance.
+        </p>
+    </div>
 
-    <hr>
-
+    <!-- TIPS -->
     <h2>Tips and Strategies</h2>
-    <img src="Tips.jpeg" width="250">
-    <ul>
-        <li>Use cover</li>
-        <li>Listen to footsteps</li>
-        <li>Practice aiming</li>
-        <li>Play as a team</li>
-    </ul>
+    <div class="card">
+        <img src="Tips.jpeg">
+        <ul>
+            <li>Use cover</li>
+            <li>Listen to footsteps</li>
+            <li>Practice aiming</li>
+            <li>Play as a team</li>
+        </ul>
+    </div>
 
-    <hr>
-
+    <!-- SEASON -->
     <h2>Seasonal Updates</h2>
-    <img src="Season.jpeg" width="250">
-    <p>
-        New updates bring weapons, skins, and events regularly.
-    </p>
+    <div class="card">
+        <img src="Season.jpeg">
+        <p>
+            New updates bring weapons, skins, and events regularly.
+        </p>
+    </div>
 
-    <hr>
-
+    <!-- WHY I LIKE IT -->
     <h2>Why I Like It</h2>
-    <p>
-        I like CODM because it is exciting and fun with friends.
-    </p>
-    <img src="Codm2.jpeg" width="250">
-
-    <hr>
+    <div class="card">
+        <img src="Codm2.jpeg">
+        <p>
+            I like CODM because it is exciting and fun with friends.
+        </p>
+    </div>
 
     <footer>
         <p>Created by: Team Mang</p>
